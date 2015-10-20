@@ -14,8 +14,10 @@ router.use(function(request, response, next) {
     next();
 });
 
+app.use(express.static('.'))
+
 app.use('*', function(request, response) {
-    response.sendfile('./index.html');
+    response.sendFile(__dirname + '/dist/index.html');
 });
 
 app.listen(port);
