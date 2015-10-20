@@ -1,0 +1,25 @@
+{
+  "name": "election",
+  "version": "1.0.0",
+  "description": "A site to allow voting for or against candidates.",
+  "main": "dist/index.html",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whatisboom/election.git"
+  },
+  "author": "Brandon Jernigan <brandon@whatisboom.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/whatisboom/election/issues"
+  },
+  "homepage": "https://github.com/whatisboom/election#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-watch": "^4.3.5"
+  }
+}
