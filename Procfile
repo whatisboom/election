@@ -1,1 +1,1 @@
-web: node server.js
+web: gulp all && cd dist && node ../server.js
