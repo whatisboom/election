@@ -1,18 +1,13 @@
-angular.module('election').controller('voteController', function($scope) {
+angular.module('election').controller('listController', function($scope, resourceFactory) {
   $scope.title = 'Vote!';
 
-  $scope.options = [{
-    title: 'one',
-    id: 'one'
-  },{
-    title: 'two',
-    id: 'two'
-  },{
-    title: 'three',
-    id: 'three'
-  }];
+  var polls = resourceFactory.polls;
 
-  $scope.vote = function(option) {
-    console.log(option.name);
+  polls.read().$promise.then(function(response) {
+    $scope.polls = response.polls;
+  });
+
+  $scope.goto = function(poll) {
+    console.log(poll);
   }
 })

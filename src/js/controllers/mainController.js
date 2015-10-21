@@ -2,11 +2,11 @@ angular.module('election').controller('mainController', function($scope, $locati
   $scope.title = 'Oauth';
 
   if (localStorage.oauth) {
-    $location.path('/vote');
+    $location.path('/polls');
   }
 
   $scope.oauth = function() {
     localStorage.oauth = true;
-    $location.path('/vote');
+    $location.path('/polls');
   }
 });

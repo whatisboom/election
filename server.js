@@ -16,6 +16,10 @@ router.use(function(request, response, next) {
 
 app.use(express.static('.'))
 
+require('./app/routes')(router);
+
+app.use('/api', router);
+
 app.use('*', function(request, response) {
     response.sendFile(__dirname + '/dist/index.html');
 });

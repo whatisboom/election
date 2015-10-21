@@ -1,3 +1,4 @@
 angular.module('election', [
-  'ngRoute'
+  'ngRoute',
+  'ngResource'
 ])
