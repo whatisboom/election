@@ -13,8 +13,8 @@ app.config(function($routeProvider) {
       controller: 'mainController'
     })
     .when('/vote', {
-      templateUrl: 'html/partials/vote.html',
-      controller: 'voteController'
+      templateUrl: 'html/partials/list.html',
+      controller: 'listController'
     })
     .when('/vote/:id', {
       templateUrl: 'html/partials/vote.html',
