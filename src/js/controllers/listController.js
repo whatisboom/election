@@ -1,4 +1,4 @@
-angular.module('election').controller('listController', function($scope, resourceFactory) {
+angular.module('election').controller('listController', function($scope, $location, resourceFactory) {
   $scope.title = 'Vote!';
 
   var polls = resourceFactory.polls;
@@ -8,6 +8,6 @@ angular.module('election').controller('listController', function($scope, resourc
   });
 
   $scope.goto = function(poll) {
-    console.log(poll);
+    $location.path('/polls/' + poll.slug)
   }
 })

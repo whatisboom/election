@@ -5,6 +5,10 @@ var PollSchema = new Schema({
   title : {
     type : String,
     default: ''
+  },
+  slug : {
+    type : String,
+    default: ''
   }
 })
 

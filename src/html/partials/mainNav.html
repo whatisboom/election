@@ -1,0 +1,10 @@
+<nav ng-controller="navController" class="navbar navbar-default">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li ng-class="{ active: isActive('/') }"><a href="#" ng-click="goto('/')">Home</a></li>
+      <li ng-class="{ active: isActive('/polls') }"><a href="#" ng-click="goto('/polls')">Polls</a></li>
+      <li ng-class="{ active: isActive('/about') }"><a href="#" ng-click="goto('/about')">About</a></li>
+      <li ng-class="{ active: isActive('/settings') }"><a href="#" ng-click="goto('/settings')">Settings</a></li>
+    </ul>
+  </div>
+</nav>

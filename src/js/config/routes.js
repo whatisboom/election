@@ -16,7 +16,7 @@ app.config(function($routeProvider) {
       templateUrl: 'html/partials/list.html',
       controller: 'listController'
     })
-    .when('/vote/:id', {
+    .when('/polls/:id', {
       templateUrl: 'html/partials/vote.html',
       controller: 'voteController'
     });
