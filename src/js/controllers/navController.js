@@ -1,6 +1,5 @@
 angular.module('election').controller('navController', function($scope, $location) {
   $scope.goto = function(path) {
-    console.log(path);
     $location.path(path);
   };
 
